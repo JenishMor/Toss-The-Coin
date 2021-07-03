@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@100;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221 218 218);
+  height: 315px;
+  width: 315px;
+  border: 3px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.flip {
+  animation-name: jen;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+@keyframes jen {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+h6 {
+  font-weight: 100;
+  font-family: "Rubik", sans-serif;
+  font-size: 80px;
+  cursor: none;
+}
+
+.colorCoin {
+  margin-top: 20px;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+}
+
+.colors li {
+  text-decoration: none;
+  list-style: none;
+  margin: 20px 20px;
+}
+
+.small {
+  text-align: center;
+  font-size: 20px;
+}
+
+.innerColor {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
