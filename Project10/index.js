@@ -11,7 +11,6 @@ coin.addEventListener('click', (e) => {
         e.target.classList.remove('flip');
         // console.log('Ok stop flipping')
         let rand = Math.floor(Math.random() * 2);
-        // console.log(rand);
 
         if (rand == 0) {
             head.innerHTML = 'Head';
